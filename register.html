@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الأنشطة - نادي الأندلس الصيفي</title>
+  <!-- تحميل Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+<!-- تحميل إعدادات Tailwind من ملف خارجي -->
+<script src="tailwind-config.js"></script>
+
+<!-- الخطوط -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&family=Noto+Naskh+Arabic@500&display=swap" rel="stylesheet">
+</head>
+<body class="bg-light text-dark font-cairo">
+
+<!-- الشريط العلوي -->
+<nav class="bg-primary text-light shadow-custom">
+  <div class="container mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between">
+    <div class="flex items-center gap-4 mb-4 md:mb-0">
+      <div class="bg-white rounded-md p-1">
+        <img src="photo/logo0.png" alt="شعار النادي" class="h-14 w-14 object-contain animate-pulse" loading="lazy">
+      </div>
+      <h1 class="text-2xl font-noto font-bold">نادي الأندلس الصيفي</h1>
+    </div>
+    <ul class="flex flex-wrap justify-center gap-4 md:gap-8">
+      <li><a href="index.html" class="hover:text-secondary">الرئيسية</a></li>
+      <li><a href="Advertisement.html" class="hover:text-secondary">لوحة المتميزات</a></li>
+      <li>
+        <a href="register.html" class="bg-secondary hover:bg-secondary/90 text-light px-6 py-2 rounded-full shadow-md">
+          سجّل الآن
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- المحتوى  بداية -->
+<section class="py-20 bg-light text-center">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-noto text-primary mb-6">📋 سجّل الآن في نادي الأندلس الصيفي</h2>
+    <p class="text-dark/70 text-lg mb-8">
+      املأ النموذج التالي للانضمام إلينا والاستمتاع بصيف مليء بالمتعة والتعلم!
+    </p>
+
+    <!-- نموذج Google Form مضمن -->
+    <div class="mx-auto max-w-3xl rounded-xl overflow-hidden shadow-custom bg-white p-4">
+      <iframe 
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLEURL/viewform?embedded=true" 
+        width="100%" 
+        height="800" 
+        frameborder="0" 
+        marginheight="0" 
+        marginwidth="0">
+        جاري تحميل النموذج…
+      </iframe>
+    </div>
+
+    <!-- رابط بديل -->
+    <p class="mt-6 text-lg text-dark">
+      أو <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEXAMPLEURL/viewform" 
+            target="_blank" 
+            class="text-secondary underline hover:text-secondary/80 transition">
+        اضغط هنا للتسجيل في النادي
+      </a>
+    </p>
+  </div>
+</section>
+
+
+<!-- المحتوى  النهاية -->
+
+
+<!-- التذييل -->
+<footer id="contact" class="bg-primary text-white pt-16 pb-8">
+  <div class="container mx-auto px-6 text-center">
+    <div class="min-w-[250px] mb-6">
+      <h3 class="font-noto text-xl border-b-2 border-secondary pb-2 mb-4">تواصل معنا</h3>
+      <p class="text-white">
+        📍 الطائف - حي الوسام<br>
+        📞 011 123 4567<br>
+        ✉️ info@andalusia-club.com
+      </p>
+    </div>
+
+    <!-- الزخرفة كصورة في المنتصف -->
+    <img src="photo/temp2.png" alt="زخرفة" class="h-24 mx-auto mb-6" loading="lazy">
+
+    <p class="text-white">© 2025 نادي الأندلس الصيفي. جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
