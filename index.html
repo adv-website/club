@@ -6,42 +6,39 @@
   <title>نادي وثبة الصيفي</title>
 
   <!-- تحميل Tailwind -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-
-<!-- تحميل إعدادات Tailwind من ملف خارجي -->
-<script src="tailwind-config.js"></script>
-
-  
-
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="tailwind-config.js"></script>
 
   <!-- الخطوط -->
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-[Cairo] bg-light text-dark">
 
 <!-- الشريط العلوي -->
 <nav class="bg-white text-primary shadow-md hover:shadow-lg transition duration-300">
-  <div class="container mx-auto px-6 py-3">
-    <!-- الصف العلوي للشعارات والنص -->
-    <div class="flex items-center justify-between">
-      <!-- شعار المدرسة على اليسار -->
-      <div class="flex items-center">
-        <img src="photo/logo0.png" alt="شعار الأندلس" class="h-24 w-24 object-contain" loading="lazy">
-      </div>
-      
-      <!-- النص وشعار النادي في المنتصف -->
-<div class="flex items-center justify-center gap-3 mx-auto">
-  <h1 class="text-3xl md:text-4xl font-noto font-bold text-gray-800">نادي</h1>
-  <img src="photo/wathbaWhite.jpg" alt="شعار النادي" class="h-24 w-24 object-contain" loading="lazy">
-  <h1 class="text-3xl md:text-4xl font-noto font-bold text-gray-800">الصيفي</h1>
-</div>
+  <div class="container mx-auto px-4 sm:px-6 py-3">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-right">
 
-      
-      <!-- الأزرار على اليمين -->
-      <div class="flex items-center gap-3">
-        <ul class="flex items-center gap-3 md:gap-5 text-sm md:text-base">
-          <li><a href="index.html" class="hover:text-secondary transition duration-300 font-medium">الرئيسية</a></li>
-          <li><a href="Advertisement.html" class="hover:text-secondary transition duration-300 font-medium">لوحة الإعلانات</a></li>
+      <!-- شعار المدرسة -->
+      <div class="flex justify-center md:justify-start">
+        <img src="photo/logo0.png" alt="شعار الأندلس" class="h-20 max-w-[80px] md:h-24 md:max-w-[100px] object-contain" loading="lazy">
+      </div>
+
+      <!-- العنوان الرئيسي -->
+      <div class="flex items-center justify-center gap-3">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-noto font-bold text-gray-800">نادي</h1>
+        <img src="photo/wathbaWhite.jpg" alt="شعار النادي" class="h-20 max-w-[80px] md:h-24 md:max-w-[100px] object-contain" loading="lazy">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-noto font-bold text-gray-800">الصيفي</h1>
+      </div>
+
+      <!-- الروابط والأزرار -->
+      <div class="flex flex-col md:flex-row items-center gap-3">
+        <ul class="flex gap-3 md:gap-5 text-sm md:text-base">
+          <li><a href="index.html" class="hover:text-secondary transition font-medium">الرئيسية</a></li>
+          <li><a href="Advertisement.html" class="hover:text-secondary transition font-medium">لوحة الإعلانات</a></li>
         </ul>
-        <a href="register.html" class="bg-secondary hover:bg-secondary/90 text-white px-4 py-1.5 md:px-5 md:py-2 rounded-full shadow-md transition duration-300 text-sm md:text-base">
+        <a href="register.html" class="bg-secondary hover:bg-secondary/90 text-white px-4 py-1.5 md:px-5 md:py-2 rounded-full shadow-md transition text-sm md:text-base">
           سجّل الآن
         </a>
       </div>
@@ -49,87 +46,83 @@
   </div>
 </nav>
 
-
-
-  <!-- قسم البطل -->
-  <section class="pt-32 pb-24 bg-gradient-to-b from-primary/10 to-light text-center">
-    <div class="container mx-auto px-6">
-      <h2 class="text-5xl font-noto font-bold text-primary mb-6">
-        
-نادي "وثبة"... حيث تنطلق الخطوة الأولى نحو صيف استثنائي !🤸‍♂️
-      </h2>
-      <p class="text-xl text-dark/80 mb-8 max-w-2xl mx-auto">أفضل البرامج الصيفية المصممة بعناية لتنمية المهارات، إطلاق الإبداع، وصناعة ذكريات لا تُنسى.      </p>
-      <div class="flex justify-center gap-4">
-        <a href="register.html" class="bg-secondary hover:bg-secondary/90 text-light px-8 py-3 text-lg rounded-full">
-          التسجيل الفوري
-        </a>
-        <a href="Activities.html" class="border-2 border-primary text-primary hover:bg-primary/10 px-8 py-3 text-lg rounded-full">
-          اكتشف المزيد
-        </a>
-      </div>
+<!-- قسم البطل -->
+<section class="pt-28 pb-20 bg-gradient-to-b from-primary/10 to-light text-center">
+  <div class="container mx-auto px-4 sm:px-6">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-noto font-bold text-primary mb-6 leading-relaxed">
+      نادي "وثبة"... حيث تنطلق الخطوة الأولى نحو صيف استثنائي !🤸‍♂️
+    </h2>
+    <p class="text-base sm:text-lg text-dark/80 mb-8 max-w-2xl mx-auto">
+      أفضل البرامج الصيفية المصممة بعناية لتنمية المهارات، إطلاق الإبداع، وصناعة ذكريات لا تُنسى.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+      <a href="register.html" class="bg-secondary hover:bg-secondary/90 text-light px-6 py-3 text-lg rounded-full w-full sm:w-auto text-center">
+        التسجيل الفوري
+      </a>
+      <a href="Activities.html" class="border-2 border-primary text-primary hover:bg-primary/10 px-6 py-3 text-lg rounded-full w-full sm:w-auto text-center">
+        اكتشف المزيد
+      </a>
     </div>
-  </section>
-
+  </div>
+</section>
 
 <!-- قسم المميزات -->
 <section id="features" class="py-20 bg-white">
-  <div class="container mx-auto px-6">
-    <h3 class="text-4xl font-noto text-primary text-center mb-16">لماذا نادي الأندلس؟</h3>
-    <div class="grid md:grid-cols-3 gap-12">
+  <div class="container mx-auto px-4 sm:px-6">
+    <h3 class="text-2xl sm:text-3xl md:text-4xl font-noto text-primary text-center mb-16">لماذا نادي الأندلس؟</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       
       <!-- ميزة 1 -->
-      <div class="bg-light p-8 rounded-2xl shadow-custom text-center text-dark">
-        <div class="bg-info w-16 h-16 rounded-xl mx-auto mb-6 flex items-center justify-center text-3xl">
+      <div class="bg-light p-6 rounded-2xl shadow-custom text-center text-dark">
+        <div class="bg-info w-16 h-16 rounded-xl mx-auto mb-4 flex items-center justify-center text-3xl">
           🎯
         </div>
-        <h4 class="text-2xl font-noto font-semibold mb-4">برامج متنوعة</h4>
-        <p>أكثر من 15 نشاطًا تعليميًا وترفيهيًا لفئات عمرية مختلفة</p>
+        <h4 class="text-xl font-noto font-semibold mb-2">برامج متنوعة</h4>
+        <p class="text-sm sm:text-base">أكثر من 15 نشاطًا تعليميًا وترفيهيًا لفئات عمرية مختلفة</p>
       </div>
 
       <!-- ميزة 2 -->
-      <div class="bg-light p-8 rounded-2xl shadow-custom text-center text-dark">
-        <div class="bg-info w-16 h-16 rounded-xl mx-auto mb-6 flex items-center justify-center text-3xl">
+      <div class="bg-light p-6 rounded-2xl shadow-custom text-center text-dark">
+        <div class="bg-info w-16 h-16 rounded-xl mx-auto mb-4 flex items-center justify-center text-3xl">
           🛡️
         </div>
-        <h4 class="text-2xl font-noto font-semibold mb-4">بيئة آمنة</h4>
-        <p>إشراف مباشر من مختصين ونسبة مشرفين مثالية</p>
+        <h4 class="text-xl font-noto font-semibold mb-2">بيئة آمنة</h4>
+        <p class="text-sm sm:text-base">إشراف مباشر من مختصين ونسبة مشرفين مثالية</p>
       </div>
 
       <!-- ميزة 3 -->
-      <div class="bg-light p-8 rounded-2xl shadow-custom text-center text-dark">
-        <div class="bg-info w-16 h-16 rounded-xl mx-auto mb-6 flex items-center justify-center text-3xl">
+      <div class="bg-light p-6 rounded-2xl shadow-custom text-center text-dark">
+        <div class="bg-info w-16 h-16 rounded-xl mx-auto mb-4 flex items-center justify-center text-3xl">
           🤝
         </div>
-        <h4 class="text-2xl font-noto font-semibold mb-4">دعم متكامل</h4>
-        <p>متابعة يومية وتقارير أسبوعية لأولياء الأمور</p>
+        <h4 class="text-xl font-noto font-semibold mb-2">دعم متكامل</h4>
+        <p class="text-sm sm:text-base">متابعة يومية وتقارير أسبوعية لأولياء الأمور</p>
       </div>
 
     </div>
   </div>
 </section>
-<div class="h-[200px]"></div> <!-- فراغ عمودي بطول 200 بكسل -->
+
+<!-- فراغ أسفل الصفحة -->
+<div class="h-24 sm:h-32"></div>
 
 <!-- التذييل -->
 <footer id="contact" class="bg-primary text-white pt-16 pb-8">
-  <div class="container mx-auto px-6 text-center">
+  <div class="container mx-auto px-4 sm:px-6 text-center">
     <div class="min-w-[250px] mb-6">
       <h3 class="font-noto text-xl border-b-2 border-secondary pb-2 mb-4">تواصل معنا</h3>
-      <p class="text-white">
+      <p>
         📍 الطائف - حي الوسام<br>
         📞 011 123 4567<br>
         ✉️ info@andalusia-club.com
       </p>
     </div>
 
-    <!-- الزخرفة كصورة في المنتصف -->
-    <img src="photo/temp2.png" alt="زخرفة" class="h-24 mx-auto mb-6" loading="lazy">
+    <img src="photo/temp2.png" alt="زخرفة" class="h-20 mx-auto mb-6" loading="lazy">
 
-    <p class="text-white">© 2025 نادي الأندلس الصيفي. جميع الحقوق محفوظة.</p>
+    <p>© 2025 نادي الأندلس الصيفي. جميع الحقوق محفوظة.</p>
   </div>
 </footer>
-
-
-
 
 </body>
 </html>
