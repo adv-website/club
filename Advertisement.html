@@ -16,37 +16,56 @@
 <body class="bg-light text-dark font-cairo">
 
 <!-- الشريط العلوي -->
-<nav class="bg-primary text-light shadow-custom">
-  <div class="container mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between">
-    <div class="flex items-center gap-4 mb-4 md:mb-0">
-      <div class="bg-white rounded-md p-1">
-        <img src="photo/logo0.png" alt="شعار النادي" class="h-14 w-14 object-contain animate-pulse" loading="lazy">
+<nav class="bg-white text-primary shadow-md hover:shadow-lg transition duration-300">
+  <div class="container mx-auto px-6 py-3">
+    <!-- الصف العلوي للشعارات والنص -->
+    <div class="flex items-center justify-between">
+      <!-- شعار المدرسة على اليسار -->
+      <div class="flex items-center">
+        <img src="photo/logo0.png" alt="شعار الأندلس" class="h-24 w-24 object-contain" loading="lazy">
       </div>
-      <h1 class="text-2xl font-noto font-bold">نادي الأندلس الصيفي</h1>
-    </div>
-    <ul class="flex flex-wrap justify-center gap-4 md:gap-8">
-      <li><a href="index.html" class="hover:text-secondary">الرئيسية</a></li>
-      <li><a href="Advertisement.html" class="hover:text-secondary">لوحة الإعلانات</a></li>
-      <li>
-        <a href="register.html" class="bg-secondary hover:bg-secondary/90 text-light px-6 py-2 rounded-full shadow-md">
+      
+      <!-- النص وشعار النادي في المنتصف -->
+<div class="flex items-center justify-center gap-3 mx-auto">
+  <h1 class="text-3xl md:text-4xl font-noto font-bold text-gray-800">نادي</h1>
+  <img src="photo/wathbaWhite.jpg" alt="شعار النادي" class="h-24 w-24 object-contain" loading="lazy">
+  <h1 class="text-3xl md:text-4xl font-noto font-bold text-gray-800">الصيفي</h1>
+</div>
+
+      
+      <!-- الأزرار على اليمين -->
+      <div class="flex items-center gap-3">
+        <ul class="flex items-center gap-3 md:gap-5 text-sm md:text-base">
+          <li><a href="index.html" class="hover:text-secondary transition duration-300 font-medium">الرئيسية</a></li>
+          <li><a href="Advertisement.html" class="hover:text-secondary transition duration-300 font-medium">لوحة الإعلانات</a></li>
+        </ul>
+        <a href="register.html" class="bg-secondary hover:bg-secondary/90 text-white px-4 py-1.5 md:px-5 md:py-2 rounded-full shadow-md transition duration-300 text-sm md:text-base">
           سجّل الآن
         </a>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </nav>
 
 <!-- المحتوى  بداية -->
 <!-- المحتوى الخاص بالإعلانات -->
-<section class="py-20 bg-white text-center">
+  <section class="pt-32 pb-24 bg-gradient-to-b from-primary/10 to-light text-center">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-noto text-primary mb-6">🏆 الفائزون في أنشطتنا</h2>
+    <p class="text-dark/70 text-lg mb-12">نفتخر بإبراز جهود أبطالنا المميزين في مختلف الأنشطة!</p>
+    <p class="text-center text-lg text-dark/70 mt-8">
+  سيتم إضافة أسماء المتميزين في الأنشطة لاحقًا 📌
+</p>
+<div class="h-[500px]"></div> <!-- فراغ عمودي بطول 500 بكسل -->
+
+
+   <!--
+<section class="pt-32 pb-24 bg-gradient-to-b from-primary/10 to-light text-center">
   <div class="container mx-auto px-6">
     <h2 class="text-4xl font-noto text-primary mb-6">🏆 الفائزون في أنشطتنا</h2>
     <p class="text-dark/70 text-lg mb-12">نفتخر بإبراز جهود أبطالنا المميزين في مختلف الأنشطة!</p>
 
-    <!-- شبكة الإعلانات -->
     <div class="grid gap-10 sm:grid-cols-2 md:grid-cols-3">
-      
-      <!-- إعلان -->
       <div class="bg-light rounded-2xl shadow-custom p-6 hover:shadow-xl transition">
         <div class="relative">
           <img src="photo/winner1.jpg" alt="فائز 1" class="w-full h-56 object-cover rounded-xl mb-4">
@@ -58,7 +77,6 @@
         <p class="text-dark/70">الطالب: <span class="font-semibold">محمد أحمد</span> 🎨</p>
       </div>
 
-      <!-- إعلان -->
       <div class="bg-light rounded-2xl shadow-custom p-6 hover:shadow-xl transition">
         <div class="relative">
           <img src="photo/winner2.jpg" alt="فائز 2" class="w-full h-56 object-cover rounded-xl mb-4">
@@ -70,7 +88,6 @@
         <p class="text-dark/70">الطالب: <span class="font-semibold">سارة خالد</span> 🔬</p>
       </div>
 
-      <!-- إعلان -->
       <div class="bg-light rounded-2xl shadow-custom p-6 hover:shadow-xl transition">
         <div class="relative">
           <img src="photo/winner3.jpg" alt="فائز 3" class="w-full h-56 object-cover rounded-xl mb-4">
@@ -81,14 +98,10 @@
         <h3 class="text-xl font-bold text-primary mb-1">نشاط اللياقة</h3>
         <p class="text-dark/70">الطالب: <span class="font-semibold">خالد العتيبي</span> 🏃‍♂️</p>
       </div>
-
-      <!-- يمكنك تكرار هذا النموذج لإعلانات أخرى -->
     </div>
   </div>
 </section>
-
-<!-- المحتوى  النهاية -->
-
+-->
 
 <!-- التذييل -->
 <footer id="contact" class="bg-primary text-white pt-16 pb-8">
