@@ -18,49 +18,48 @@
 
 <!-- الشريط العلوي -->
 <nav class="bg-white text-primary shadow-md hover:shadow-lg transition duration-300">
-  <div class="container mx-auto px-6 py-3">
-    <!-- الصف العلوي للشعارات والنص -->
-    <div class="flex items-center justify-between">
-      <!-- شعار المدرسة على اليسار -->
-      <div class="flex items-center">
-        <img src="photo/logo0.png" alt="شعار الأندلس" class="h-24 w-24 object-contain" loading="lazy">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+    <div class="flex flex-wrap items-center justify-between gap-4">
+      
+      <!-- شعار المدرسة -->
+      <div class="flex-shrink-0">
+        <img src="photo/logo0.png" alt="شعار الأندلس" class="h-20 w-20 object-contain" loading="lazy">
       </div>
       
-      <!-- النص وشعار النادي في المنتصف -->
-<div class="flex items-center justify-center gap-3 mx-auto">
-  <h1 class="text-3xl md:text-4xl font-noto font-bold text-gray-800">نادي</h1>
-  <img src="photo/wathbaWhite.jpg" alt="شعار النادي" class="h-24 w-24 object-contain" loading="lazy">
-  <h1 class="text-3xl md:text-4xl font-noto font-bold text-gray-800">الصيفي</h1>
-</div>
-
+      <!-- عنوان النادي -->
+      <div class="flex-grow flex items-center justify-center gap-2 sm:gap-4 mx-auto text-center">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-noto font-bold text-gray-800">نادي</h1>
+        <img src="photo/wathbaWhite.jpg" alt="شعار النادي" class="h-20 w-20 object-contain" loading="lazy">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-noto font-bold text-gray-800">الصيفي</h1>
+      </div>
       
-      <!-- الأزرار على اليمين -->
-      <div class="flex items-center gap-3">
-        <ul class="flex items-center gap-3 md:gap-5 text-sm md:text-base">
+      <!-- روابط التنقل -->
+      <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-sm md:text-base">
+        <ul class="flex gap-3 md:gap-5">
           <li><a href="index.html" class="hover:text-secondary transition duration-300 font-medium">الرئيسية</a></li>
           <li><a href="Advertisement.html" class="hover:text-secondary transition duration-300 font-medium">لوحة الإعلانات</a></li>
         </ul>
-        <a href="register.html" class="bg-secondary hover:bg-secondary/90 text-white px-4 py-1.5 md:px-5 md:py-2 rounded-full shadow-md transition duration-300 text-sm md:text-base">
+        <a href="register.html" class="bg-secondary hover:bg-secondary/90 text-white px-4 py-2 rounded-full shadow-md transition duration-300 text-sm md:text-base whitespace-nowrap">
           سجّل الآن
         </a>
       </div>
+
     </div>
   </div>
 </nav>
 
-<!-- المحتوى  بداية -->
-<!-- المحتوى الخاص بالأنشطة -->
-  <section class="pt-32 pb-24 bg-gradient-to-b from-primary/10 to-light text-center">
-  <div class="container mx-auto px-6">
-    <h2 class="text-4xl font-noto text-primary mb-6">أنشطتنا المتنوعة</h2>
-    <p class="text-dark/70 text-lg mb-12">استمتع بفعاليات تعليمية وترفيهية لكل الأعمار</p>
+<!-- ✅ قسم الأنشطة يبقى كما هو مع بعض التحسين في الشبكة -->
+<section class="pt-32 pb-24 bg-gradient-to-b from-primary/10 to-light text-center">
+  <div class="container mx-auto px-4 sm:px-6">
+    <h2 class="text-3xl sm:text-4xl font-noto text-primary mb-6">أنشطتنا المتنوعة</h2>
+    <p class="text-dark/70 text-lg mb-12 max-w-xl mx-auto">استمتع بفعاليات تعليمية وترفيهية لكل الأعمار</p>
 
     <!-- شبكة الأنشطة -->
-    <div class="grid gap-10 sm:grid-cols-2 md:grid-cols-3">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       
       <!-- نشاط -->
-      <div class="bg-light rounded-xl shadow-custom overflow-hidden">
-        <img src="photo/activity1.jpg" alt="نشاط 1" class="w-full h-56 object-cover hover:scale-105 transition duration-300">
+      <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:scale-[1.01]">
+        <img src="photo/activity1.jpg" alt="نشاط 1" class="w-full h-52 sm:h-56 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-bold text-primary mb-2">ورش الفنون</h3>
           <p class="text-dark/70">تعلم أساسيات الرسم والتلوين بأسلوب ممتع للأطفال.</p>
@@ -68,8 +67,8 @@
       </div>
 
       <!-- نشاط -->
-      <div class="bg-light rounded-xl shadow-custom overflow-hidden">
-        <img src="photo/activity2.jpg" alt="نشاط 2" class="w-full h-56 object-cover hover:scale-105 transition duration-300">
+      <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:scale-[1.01]">
+        <img src="photo/activity2.jpg" alt="نشاط 2" class="w-full h-52 sm:h-56 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-bold text-primary mb-2">علوم ممتعة</h3>
           <p class="text-dark/70">تجارب علمية مبسطة تثير فضول الأطفال وتحببهم في الاكتشاف.</p>
@@ -77,37 +76,38 @@
       </div>
 
       <!-- نشاط -->
-      <div class="bg-light rounded-xl shadow-custom overflow-hidden">
-        <img src="photo/activity3.jpg" alt="نشاط 3" class="w-full h-56 object-cover hover:scale-105 transition duration-300">
+      <div class="bg-white rounded-xl shadow-md overflow-hidden transition transform hover:scale-[1.01]">
+        <img src="photo/activity3.jpg" alt="نشاط 3" class="w-full h-52 sm:h-56 object-cover">
         <div class="p-4">
           <h3 class="text-xl font-bold text-primary mb-2">ألعاب حركية</h3>
           <p class="text-dark/70">ألعاب جماعية ومسابقات رياضية ممتعة لتعزيز اللياقة والتعاون.</p>
         </div>
       </div>
 
-      <!-- أضف أنشطة إضافية بنفس النموذج -->
     </div>
   </div>
 </section>
 
-<!-- المحتوى  النهاية -->
+<!-- الزخرفة كصورة في المنتصف والجانبين -->
+<div class="flex justify-center items-center gap-2 sm:gap-4 mb-6">
+  <img src="photo/wathbaBackgr.png" alt="زخرفة يمين" class="h-5 sm:h-8" loading="lazy">
+  <img src="photo/wathbaBackgr.png" alt="زخرفة وسط" class="h-5 sm:h-8" loading="lazy">
+  <img src="photo/wathbaBackgr.png" alt="زخرفة يسار" class="h-5 sm:h-8" loading="lazy">
+</div>
 
-<!-- التذييل -->
+<!-- ✅ التذييل جاهز ومتكيف -->
 <footer id="contact" class="bg-primary text-white pt-16 pb-8">
-  <div class="container mx-auto px-6 text-center">
-    <div class="min-w-[250px] mb-6">
+  <div class="container mx-auto px-4 sm:px-6 text-center">
+    <div class="mb-6">
       <h3 class="font-noto text-xl border-b-2 border-secondary pb-2 mb-4">تواصل معنا</h3>
-      <p class="text-white">
+      <p>
         📍 الطائف - حي الوسام<br>
         📞 011 123 4567<br>
         ✉️ info@andalusia-club.com
       </p>
     </div>
-
-    <!-- الزخرفة كصورة في المنتصف -->
     <img src="photo/temp2.png" alt="زخرفة" class="h-24 mx-auto mb-6" loading="lazy">
-
-    <p class="text-white">© 2025 نادي الأندلس الصيفي. جميع الحقوق محفوظة.</p>
+    <p>© 2025 نادي الأندلس الصيفي. جميع الحقوق محفوظة.</p>
   </div>
 </footer>
 
