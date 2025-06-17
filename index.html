@@ -27,8 +27,8 @@
   animation: fadeUp 1s ease-out both;
 }
 
-/* دوران الإيموجي عند النقر */
-@keyframes rotateOnce {
+/* دوران الإيموجي عند التحميل */
+@keyframes rotateOnLoad {
   from {
     transform: rotate(0deg);
   }
@@ -36,14 +36,28 @@
     transform: rotate(360deg);
   }
 }
-.emoji-touch-spin {
-  display: inline-block;
-  transition: transform 0.5s ease-in-out;
+
+/* دوران الإيموجي عند النقر */
+@keyframes rotateOnClick {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-.emoji-touch-spin:active {
-  animation: rotateOnce 1.2s ease-in-out 1;
+
+.emoji-spin {
+  display: inline-block;
+  animation: rotateOnLoad 1.5s ease-in-out 1;
+}
+
+.emoji-spin:active {
+  animation: rotateOnClick 1.2s ease-in-out 1;
 }
 </style>
+
+
 
 
 
@@ -88,7 +102,7 @@
   <div class="container mx-auto px-4 sm:px-6">
 <h2 class="animate-fadeUp text-3xl sm:text-4xl md:text-5xl font-noto font-bold text-primary mb-6 leading-relaxed">
   نادي "وثبة"... حيث تنطلق الخطوة الأولى نحو صيف استثنائي!
-  <span class="emoji-touch-spin">🤸‍♂️</span>
+  <span class="emoji-spin">🤸‍♂️</span>
 </h2>
 
 
