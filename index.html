@@ -11,6 +11,43 @@
 
   <!-- الخطوط -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* تحريك النص عند الظهور */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeUp {
+  animation: fadeUp 1s ease-out both;
+}
+
+/* دوران الإيموجي عند النقر */
+@keyframes rotateOnce {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.emoji-touch-spin {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+}
+.emoji-touch-spin:active {
+  animation: rotateOnce 1.2s ease-in-out 1;
+}
+</style>
+
+
+
+
 </head>
 
 <body class="font-[Cairo] bg-light text-dark">
@@ -33,15 +70,15 @@
       </div>
 
       <!-- الروابط والأزرار -->
-      <div class="flex flex-col md:flex-row items-center gap-3">
-        <ul class="flex gap-3 md:gap-5 text-sm md:text-base">
-          <li><a href="index.html" class="hover:text-secondary transition font-medium">الرئيسية</a></li>
-          <li><a href="Advertisement.html" class="hover:text-secondary transition font-medium">لوحة الإعلانات</a></li>
-        </ul>
-        <a href="register.html" class="bg-secondary hover:bg-secondary/90 text-white px-4 py-1.5 md:px-5 md:py-2 rounded-full shadow-md transition text-sm md:text-base">
-          سجّل الآن
-        </a>
-      </div>
+      <div class="flex flex-col md:flex-row items-center gap-3 text-sm md:text-base font-noto">
+  <ul class="flex gap-3 md:gap-5">
+    <li><a href="index.html" class="hover:text-secondary transition font-medium">الرئيسية</a></li>
+    <li><a href="Advertisement.html" class="hover:text-secondary transition font-medium">لوحة الإعلانات</a></li>
+  </ul>
+  <a href="register.html" class="bg-secondary hover:bg-secondary/90 text-white px-4 py-1.5 md:px-5 md:py-2 rounded-full shadow-md transition">
+    سجّل الآن
+  </a>
+</div>
     </div>
   </div>
 </nav>
@@ -49,9 +86,14 @@
 <!-- قسم البطل -->
 <section class="pt-28 pb-20 bg-gradient-to-b from-primary/10 to-light text-center">
   <div class="container mx-auto px-4 sm:px-6">
-    <h2 class="text-3xl sm:text-4xl md:text-5xl font-noto font-bold text-primary mb-6 leading-relaxed">
-      نادي "وثبة"... حيث تنطلق الخطوة الأولى نحو صيف استثنائي !🤸‍♂️
-    </h2>
+<h2 class="animate-fadeUp text-3xl sm:text-4xl md:text-5xl font-noto font-bold text-primary mb-6 leading-relaxed">
+  نادي "وثبة"... حيث تنطلق الخطوة الأولى نحو صيف استثنائي!
+  <span class="emoji-touch-spin">🤸‍♂️</span>
+</h2>
+
+
+
+
     <p class="text-base sm:text-lg text-dark/80 mb-8 max-w-2xl mx-auto">
       أفضل البرامج الصيفية المصممة بعناية لتنمية المهارات، إطلاق الإبداع، وصناعة ذكريات لا تُنسى.
     </p>
@@ -59,9 +101,11 @@
       <a href="register.html" class="bg-secondary hover:bg-secondary/90 text-light px-6 py-3 text-lg rounded-full w-full sm:w-auto text-center">
         التسجيل الفوري
       </a>
+      <!--
       <a href="Activities.html" class="border-2 border-primary text-primary hover:bg-primary/10 px-6 py-3 text-lg rounded-full w-full sm:w-auto text-center">
         اكتشف المزيد
       </a>
+      -->
     </div>
   </div>
 </section>
@@ -74,7 +118,8 @@
 <!-- قسم المميزات -->
 <section id="features" class="py-20 bg-white">
   <div class="container mx-auto px-4 sm:px-6">
-    <h3 class="text-2xl sm:text-3xl md:text-4xl font-noto text-primary text-center mb-16">لماذا نادي الأندلس؟</h3>
+    <h3 class="text-2xl sm:text-3xl md:text-4xl font-noto text-primary text-center mb-16"> لماذا نادي<strong> وثبة</strong> ؟</h3>
+    
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       
       <!-- ميزة 1 -->
@@ -120,9 +165,11 @@
     <div class="min-w-[250px] mb-6">
       <h3 class="font-noto text-xl border-b-2 border-secondary pb-2 mb-4">تواصل معنا</h3>
       <p>
-        📍 الطائف - حي الوسام<br>
-        📞 011 123 4567<br>
-        ✉️ info@andalusia-club.com
+        📍 الطائف - حي الوسام
+        <br>
+        📞 0544709141
+        <br>
+        
       </p>
     </div>
 
