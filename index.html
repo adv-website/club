@@ -111,10 +111,54 @@
     <p class="text-base sm:text-lg text-dark/80 mb-8 max-w-2xl mx-auto">
       أفضل البرامج الصيفية المصممة بعناية لتنمية المهارات، إطلاق الإبداع، وصناعة ذكريات لا تُنسى.
     </p>
+    <p>
     <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
       <a href="register.html" class="bg-secondary hover:bg-secondary/90 text-light px-6 py-3 text-lg rounded-full w-full sm:w-auto text-center">
         التسجيل الفوري
       </a>
+    </p>
+    </div>
+
+
+  <div id="countdown" class="mt-10 max-w-3xl mx-auto text-center animate-fadeUp">
+  <h3 class="text-xl sm:text-2xl font-bold text-primary mb-6">
+     العد التنازلي لانطلاق النادي ⏳
+  </h3>
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+    
+    <!-- ثانية -->
+    <div class="bg-gradient-to-b from-light to-secondary text-white rounded-2xl shadow-md p-5 animate-fadeUp">
+      <div id="seconds" class="text-3xl sm:text-4xl font-bold">--</div>
+      <div class="text-sm mt-1 font-medium">ثانية</div>
+    </div>
+    <!-- دقيقة -->
+    <div class="bg-gradient-to-b from-light to-secondary text-white rounded-2xl shadow-md p-5 animate-fadeUp">
+      <div id="minutes" class="text-3xl sm:text-4xl font-bold">--</div>
+      <div class="text-sm mt-1 font-medium">دقيقة</div>
+    </div>
+    <!-- ساعة -->
+    <div class="bg-gradient-to-b from-light to-secondary text-white rounded-2xl shadow-md p-5 animate-fadeUp">
+      <div id="hours" class="text-3xl sm:text-4xl font-bold">--</div>
+      <div class="text-sm mt-1 font-medium">ساعة</div>
+    </div>
+    <!-- يوم -->
+    <div class="bg-gradient-to-b from-light to-secondary text-white rounded-2xl shadow-md p-5 animate-fadeUp">
+  <div id="days" class="text-3xl sm:text-4xl font-bold">--</div>
+  <div class="text-sm mt-1 font-medium">يوم</div>
+</div>
+    
+  </div>
+</div>
+    
+  </div>
+</div>
+    
+
+  </div>
+</div>
+
+
+
       <!--
       <a href="Activities.html" class="border-2 border-primary text-primary hover:bg-primary/10 px-6 py-3 text-lg rounded-full w-full sm:w-auto text-center">
         اكتشف المزيد
@@ -132,7 +176,7 @@
 <!-- قسم المميزات -->
 <section id="features" class="py-20 bg-white">
   <div class="container mx-auto px-4 sm:px-6">
-    <h3 class="text-2xl sm:text-3xl md:text-4xl font-noto text-primary text-center mb-16"> لماذا نادي<strong> وثبة</strong> ؟</h3>
+    <h3 class="text-2xl sm:text-3xl md:text-4xl font-noto text-dark text-center mb-16"> لماذا نادي<strong> وثبة</strong> ؟</h3>
     
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       
@@ -192,6 +236,35 @@
     <p>© 2025 نادي الأندلس الصيفي. جميع الحقوق محفوظة.</p>
   </div>
 </footer>
+
+<script>
+  const targetDate = new Date("2025-07-06T17:00:00").getTime();
+
+  const countdown = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    if (distance <= 0) {
+      clearInterval(countdown);
+      document.getElementById("countdown").innerHTML = `
+        <p class="text-xl font-bold text-green-600 mt-6">انطلق النادي! 🎉</p>`;
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
+  }, 1000);
+</script>
+
+
+
 
 </body>
 </html>
